@@ -114,21 +114,31 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, false);
     
-    // Smooth scrolling for all anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            if (this.getAttribute('href') !== '#') {
-                e.preventDefault();
+    // Smooth scrolling for all anchor links - fixed with absolute paths
+    document.querySelectorAll('a[href^="/#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').replace('/', '');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                const headerHeight = document.querySelector('header').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
                 
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
+                window.scrollTo({
+                    top: targetPosition - headerHeight - 20,
+                    behavior: 'smooth'
+                });
                 
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
+                // Update active state
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Update URL without reloading
+                history.pushState(null, null, this.getAttribute('href'));
             }
         });
     });

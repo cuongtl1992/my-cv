@@ -8,5 +8,3 @@ title: Tran Le Cuong - Technical Manager
 ## Technical Manager at KiotViet
 
 Building innovative software solutions with a passion for leadership and technical excellence.
-
-[View My Experience](#experience) [Contact Me](#contact)

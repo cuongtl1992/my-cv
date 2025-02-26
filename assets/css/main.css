@@ -180,28 +180,16 @@ nav {
     align-items: center;
 }
 
-.logo-container {
-    width: 44px;
-    height: 44px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #0d47a1 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: var(--transition);
+    letter-spacing: -0.5px;
 }
 
-.logo-container:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.logo-initials {
-    color: white;
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
+.logo:hover .logo-text {
+    color: var(--accent-color);
 }
 
 .nav-links {
@@ -327,6 +315,13 @@ nav {
     gap: 15px;
 }
 
+/* Hero CTA buttons */
+.hero-cta {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
 .btn {
     display: inline-block;
     background-color: var(--primary-color);
@@ -338,6 +333,8 @@ nav {
     transition: var(--transition);
     border: none;
     cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
 }
 
 .btn:hover {

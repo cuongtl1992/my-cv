@@ -1,0 +1,60 @@
+<section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title animate">Skills</h2>
+        <p class="section-subtitle animate delay-1">My professional toolkit</p>
+        
+        <div class="skills-container">
+            <div class="skill-box animate delay-1">
+                <h3><i class="fas fa-user-tie"></i> Personal Skills</h3>
+                <ul class="skill-list">
+                    {% for skill in site.data.skills.personal %}
+                    <li>{{ skill }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <div class="skill-box animate delay-2">
+                <h3><i class="fas fa-code"></i> Technical Expertise</h3>
+                <div class="code-block">
+                    <div class="code-header">
+                        <span>skills.cs</span>
+                        <span class="language-badge">C#</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="code-keyword">public class</span> <span class="code-method">TechnicalManager</span></div>
+                        <div class="code-line">{</div>
+                        <div class="code-line">    <span class="code-comment">// Architecture knowledge</span></div>
+                        <div class="code-line">    <span class="code-keyword">public readonly string[]</span> Architecture = {</div>
+                        <div class="code-line">        <span class="code-string">"Hexagonal"</span>, <span class="code-string">"Clean"</span>, <span class="code-string">"Onion"</span>,</div>
+                        <div class="code-line">        <span class="code-string">"Event-Driven"</span>, <span class="code-string">"Offline-First"</span>, <span class="code-string">"Event Sourcing"</span></div>
+                        <div class="code-line">    };</div>
+                        <div class="code-line">    </div>
+                        <div class="code-line">    <span class="code-comment">// Principles</span></div>
+                        <div class="code-line">    <span class="code-keyword">public readonly string[]</span> Principles = {</div>
+                        <div class="code-line">        <span class="code-string">"SOLID"</span>, <span class="code-string">"DRY"</span>, <span class="code-string">"TDD"</span>, <span class="code-string">"Design Patterns"</span></div>
+                        <div class="code-line">    };</div>
+                        <div class="code-line">}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h3 class="section-subtitle" style="text-align: left; margin-top: 50px; margin-bottom: 20px;">Technical Skills</h3>
+        
+        <div class="tech-skills">
+            {% for category in site.data.skills.technical %}
+            {% assign category_name = category[0] | capitalize %}
+            {% assign items = category[1] %}
+            
+            <div class="tech-category animate delay-{{ forloop.index | modulo: 3 | plus: 1 }}">
+                <h4>{{ category_name }}</h4>
+                <div class="tech-items">
+                    {% for item in items %}
+                    <span class="tech-item">{{ item }}</span>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

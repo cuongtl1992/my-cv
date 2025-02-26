@@ -1,0 +1,29 @@
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section-title animate">Contact Me</h2>
+        <p class="section-subtitle animate delay-1">Let's connect</p>
+        
+        <div class="contact-content">
+            <div class="contact-card animate delay-1">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>Feel free to reach out via email</p>
+                <a href="mailto:{{ site.email }}" class="btn">{{ site.email }}</a>
+            </div>
+            
+            <div class="contact-card animate delay-2">
+                <i class="fas fa-phone"></i>
+                <h3>Phone</h3>
+                <p>Give me a call</p>
+                <a href="tel:{{ site.phone }}" class="btn">{{ site.phone }}</a>
+            </div>
+            
+            <div class="contact-card animate delay-3">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Location</h3>
+                <p>Based in</p>
+                <span class="btn btn-outline">{{ site.location }}</span>
+            </div>
+        </div>
+    </div>
+</section>
