@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content animate">
+            {{ content }}
+        </div>
+        
+        <div class="terminal-container">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-button"></div>
+                    <div class="terminal-button yellow"></div>
+                    <div class="terminal-button green"></div>
+                    <div class="terminal-title">developer.sh</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="command">
+                        <span class="prompt">$ </span>
+                        <span class="command-text">whoami</span>
+                    </div>
+                    <div class="output">Tran Le Cuong - Technical Manager</div>
+                    
+                    <div class="command">
+                        <span class="prompt">$ </span>
+                        <span class="command-text">cat skills.json</span>
+                    </div>
+                    <div class="output">
+                        <div class="line">{ <span class="string">"architecture"</span>: [<span class="string">"Hexagonal"</span>, <span class="string">"Clean"</span>, <span class="string">"Event-Driven"</span>],</div>
+                        <div class="line">  <span class="string">"languages"</span>: [<span class="string">"C#"</span>, <span class="string">"TypeScript"</span>, <span class="string">"Dart"</span>, <span class="string">"Golang"</span>],</div>
+                        <div class="line">  <span class="string">"leadership"</span>: <span class="variable">true</span> }</div>
+                    </div>
+                    
+                    <div class="command">
+                        <span class="prompt">$ </span>
+                        <span class="command-text">git status</span>
+                    </div>
+                    <div class="output">
+                        <div class="line"><span class="comment"># Always ready for new challenges</span></div>
+                    </div>
+                    
+                    <div class="command">
+                        <span class="prompt">$ </span>
+                        <span class="command-text">contact <span class="function">--hire</span></span><span class="cursor"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include about.html %}
+{% include experience.html %}
+{% include skills.html %}
+{% include awards.html %}
+{% include contact.html %}

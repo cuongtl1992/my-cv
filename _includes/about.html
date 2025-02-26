@@ -1,0 +1,46 @@
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title animate">About Me</h2>
+        <p class="section-subtitle animate delay-1">Technical Manager with extensive experience in software development</p>
+        
+        <div class="about-content">
+            <div class="about-img animate delay-2">
+                <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.full_name }}">
+            </div>
+            <div class="about-text animate delay-3">
+                <h3>Hello!</h3>
+                <p>I'm a Technical Manager with over 10 years of experience in software development. Currently leading a team of 30-34 engineers at KiotViet, I specialize in architecture design, building core frameworks, and implementing best practices in software development.</p>
+                <ul class="info-list">
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <strong>Full Name:</strong> {{ site.full_name }}
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar"></i>
+                        <strong>Birth Date:</strong> {{ site.dob | date: "%B %d, %Y" }}
+                    </li>
+                    <li>
+                        <i class="fas fa-briefcase"></i>
+                        <strong>Industry:</strong> Software Development
+                    </li>
+                    <li>
+                        <i class="fas fa-graduation-cap"></i>
+                        <strong>Education:</strong> Hanoi University of Business and Technology (2014)
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <strong>Contact:</strong> {{ site.phone }}
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <strong>Email:</strong> {{ site.email }}
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <strong>Location:</strong> {{ site.location }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

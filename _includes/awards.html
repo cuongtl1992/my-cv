@@ -1,0 +1,19 @@
+<section id="awards" class="section" style="background-color: var(--secondary-color);">
+    <div class="container">
+        <h2 class="section-title animate">Honors & Awards</h2>
+        <p class="section-subtitle animate delay-1">Recognition for excellence</p>
+        
+        <div class="awards-container">
+            {% for award in site.data.awards %}
+            <div class="award-box animate delay-{{ forloop.index }}">
+                <div class="award-year">{{ award.year }}</div>
+                <h3>{{ award.title }}</h3>
+                <p>{{ award.organization }}</p>
+                <div class="award-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,60 @@
+personal:
+  - Strong leadership and team enrollment capabilities, with proven success building and growing engineering teams
+  - Active builder of developer communities, fostering knowledge sharing and collaboration
+  - Creative problem-solver with a continuous learning mindset
+  - Performs exceptionally well under high-pressure environments and tight deadlines
+  - Rapid adaptation to new technologies, frameworks, and business domains
+  - Excels in both independent work and collaborative team settings
+  - Advanced problem analysis with ability to identify multiple viable solutions
+  - Friendly and sociable team player who builds positive relationships
+
+technical:
+  architecture:
+    - Hexagonal Architecture
+    - Clean Architecture
+    - Onion Architecture
+    - Event-Driven Architecture
+    - Offline-First 
+    - Event Sourcing
+    
+  principles:
+    - SOLID
+    - DRY
+    - TDD
+    - Design Patterns
+    
+  languages:
+    - C#
+    - JavaScript/TypeScript
+    - Dart
+    - Golang
+    - C++
+    
+  frameworks:
+    - .NET Core
+    - Angular
+    - Flutter
+    - Gin
+    
+  databases:
+    - SQL Server
+    - MongoDB
+    - PostgreSQL
+    
+  caching:
+    - Memcache
+    - Redis
+    
+  messaging:
+    - Kafka
+    - RabbitMQ
+    
+  protocols:
+    - MQTT (EMQX)
+    
+  devops:
+    - Ansible
+    - Terraform (IaC)
+    - HAProxy
+    - Docker
+    - Kubernetes

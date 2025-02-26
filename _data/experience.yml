@@ -1,0 +1,26 @@
+- position: Technical Manager
+  company: KiotViet Corp
+  period: 2020 - Present
+  description: Leading a team of approximately 60 members, including 30-34 engineers. Responsible for technical direction, architecture decisions, and team management.
+  team_size: ~60 (30-34 engineers)
+  
+- position: Team Leader
+  company: Citigo Software - KiotViet Product
+  period: 2018 - 2020
+  description: Led a growing team from 5 to 12 engineers. Oversaw development processes, code quality, and product delivery for the KiotViet product.
+  team_size: 5 -> 12 engineers
+  
+- position: Senior Software Engineer
+  company: Citigo Software - KiotViet Product
+  period: 2016 - 2018
+  description: Advanced to senior role focusing on complex problem-solving, architecture improvements, and mentoring junior developers.
+  
+- position: Software Engineer, .NET Developer
+  company: Citigo Software - Outsourcing
+  period: 2015 - 2016
+  description: Developed software solutions for outsourcing clients using .NET technologies.
+  
+- position: Software Engineer
+  company: Social Network Project "Ad That.vn"
+  period: 2013 - 2015
+  description: Worked on developing features for the social network platform Ad That.vn.

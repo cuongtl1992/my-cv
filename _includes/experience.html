@@ -1,0 +1,31 @@
+<section id="experience" class="section" style="background-color: var(--secondary-color);">
+    <div class="container">
+        <h2 class="section-title animate">Professional Experience</h2>
+        <p class="section-subtitle animate delay-1">My journey in software development</p>
+        
+        <div class="timeline">
+            {% assign positions = site.data.experience %}
+            {% for job in positions %}
+                <div class="timeline-item {% cycle 'left', 'right' %} animate {% if forloop.index > 1 %}delay-{{ forloop.index | modulo: 3 | plus: 1 }}{% endif %}">
+                    <div class="timeline-content">
+                        <h3>{{ job.position }}</h3>
+                        <h4>
+                            <i class="fas fa-building"></i>
+                            {{ job.company }} ({{ job.period }})
+                        </h4>
+                        <p>{{ job.description }}</p>
+                        
+                        {% if job.team_size %}
+                        <div class="timeline-meta">
+                            <div class="team-size">
+                                <i class="fas fa-users"></i>
+                                Team Size: {{ job.team_size }}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
