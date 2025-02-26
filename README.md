@@ -32,7 +32,7 @@ portfolio-site/
 │   ├── js/                    # JavaScript
 │   │   └── main.js            # Main JS file
 │   └── images/                # Images
-│       └── profile.jpg        # Your profile picture
+│       └── profile.heic        # Your profile picture
 │
 └── README.md                  # Repository documentation
 ```
