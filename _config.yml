@@ -2,7 +2,7 @@
 title: Tran Le Cuong
 email: cuongtl92@gmail.com
 description: >-
-  Technical Manager at KiotViet with expertise in software architecture,
+  Technical Director at KiotViet with expertise in software architecture,
   leadership, and full-stack development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lecuong.me" # the base hostname & protocol for your site
@@ -18,7 +18,7 @@ plugins:
 
 # Custom variables
 full_name: Tran Le Cuong
-job_title: Technical Manager
+job_title: Technical Director
 company: KiotViet
 phone: 0389.464.693
 dob: 1992-09-19
