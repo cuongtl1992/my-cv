@@ -39,27 +39,18 @@ portfolio-site/
 
 ## Setup Instructions
 
-### 1. Create GitHub Repository
-
-1. Create a new repository named `username.github.io` (replace `username` with your GitHub username)
-2. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/username/username.github.io.git
-   cd username.github.io
-   ```
-
-### 2. Copy Files
+### 1. Copy Files
 
 Copy all the files from this project into your repository.
 
-### 3. Update Content
+### 2. Update Content
 
 Update the content in the following files:
 - `_config.yml`: Site configuration
 - `_data/*.yml`: Your personal information, experience, skills, and awards
 - Add your profile picture to `assets/images/`
 
-### 4. Test Locally (Optional)
+### 3. Test Locally (Optional)
 
 To test your site locally before deploying:
 
@@ -75,7 +66,7 @@ To test your site locally before deploying:
 
 3. Visit `http://localhost:4000` in your browser
 
-### 5. Deploy to GitHub Pages
+### 4. Deploy to GitHub Pages
 
 1. Commit and push your changes:
    ```bash
